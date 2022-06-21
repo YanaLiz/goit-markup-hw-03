@@ -5,116 +5,130 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GOIT-MARKUP-HW-02</title>
+    <title>GOIT-MARKUP-HW-03</title>
     <!--Стили Портфолио-->
     <link rel="stylesheet" href="./CSS/styles.css">
     <!--Шрифти-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
         rel="stylesheet">
+    <!--normalize styles start-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css">
+    <!--normalize styles end-->
+    <!--Стили файла index.html-->
+    <link rel="stylesheet" href="./CSS/styles.css">
 </head>
 
 <body>
-    <!--Секция Верхняя линия-->
+<div class="container">    
     <header class="header">
         <a class="logo" href="index.html"> <span>Web</span>Studio</a>
-        <nav class="header-nav">
-            <ul class="site-nav list">
-                <li><a class="header-link" href="index.html">Студия</a></li>
-                <li><a class="current header-link" href="portfolio.html">Портфолио</a></li>
-                <li><a class="header-link" href="contakt">Контакты</a></li>
-            </ul>
-        </nav>
-
+    <nav>
+        <a class="header-link" href="index.html">Студия</a>
+        <a class="current header-link" href="portfolio.html">Портфолио</a>
+        <a class="header-link" href="contakt">Контакты</a>
+    </nav>
         <div><a class="contact-link" href="mailto:info@devstudio.com">info@devstudio.com</a></div>
         <div><a class="contact-link" href="tel:+380961111111">+38 096 111 11 11</a></div>
-
     </header>
+</div>
     <main>
-        <section>
+        <div class="container">
+        <section class="filter">
             <h1 class="portfolio-list" hidden>Портфолио</h1>
-
-            <ul class="text">
-                <li>
-                    <button class="portfolio-button" type="button">Все</button>
-                </li>
-            </ul>
             <ul class="group">
                 <li>
-                    <button class="button-list" type="button">Веб-сайты</button>
+                    <button class="group portfolio-button text" type="button">Все</button>
                 </li>
                 <li>
-                    <button class="button-list-a" type="button">Приложения</button>
+                    <button class="group button-list" type="button">Веб-сайты</button>
                 </li>
                 <li>
-                    <button class="button-list-b" type="button">Дизайн</button>
+                    <button class="group button-list-a" type="button">Приложения</button>
                 </li>
                 <li>
-                    <button class="button-list-c" type="button">Маркетинг</button>
-                </li>
-            </ul>
-            <ul class="portfolio-projekt">
-                <li>
-                    <img src="./imeges/imeges/proekt1.jpg" alt="Екран ноутбука" width="370" height="294">
-
-                    <h2 class="portfolio-title">Технокряк</h2>
-                    <p class="teksting">Веб-сайт</p>
+                    <button class="group button-list-b" type="button">Дизайн</button>
                 </li>
                 <li>
-                    <img src="./imeges/imeges/proekt2.jpg" alt="Игра в мяч" width="370" height="294">
-
-                    <h2 class="portfolio-title" lang="en">Постер New Orlean vs Golden Star</h2>
-                    <p class="teksting">Дизайн</p>
-                </li>
-                <li>
-                    <img src="./imeges/imeges/proekt3.jpg" alt="Реклама" width="370" height="294">
-
-                    <h2 class="portfolio-title" lang="en">Ресторан Seafood</h2>
-                    <p class="teksting">Приложение</p>
-                </li>
-                <li>
-                    <img src="./imeges/imeges/proekt4.jpg" alt="Наушники" width="370" height="294">
-
-                    <h2 class="portfolio-title" lang="en">Проект Prime</h2>
-                    <p class="teksting">Маркетинг</p>
-                </li>
-                <li>
-                    <img src="./imeges/imeges/proekt5.jpg" alt="Коробки" width="370" height="294">
-
-                    <h2 class="portfolio-title" lang="en">Проект Boxes</h2>
-                    <p class="teksting">Приложение</p>
-                </li>
-                <li>
-                    <img src="./imeges/imeges/proekt6.jpg" alt="Монитор" width="370" height="294">
-
-                    <h2 class="portfolio-title" lang="en">Inspiration has no Borders</h2>
-                    <p class="teksting">Веб-сайт</p>
-                </li>
-                <li>
-                    <img src="./imeges/imeges/proekt7.jpg" alt="Книга" width="370" height="294">
-
-                    <h2 class="portfolio-title" lang="en">Издание Limited Edition</h2>
-                    <p class="teksting">Дизайн</p>
-                </li>
-                <li>
-                    <img src="./imeges/imeges/proekt8.jpg" alt="Бирка" width="370" height="294">
-
-                    <h2 class="portfolio-title" lang="en">Проект LAB</h2>
-                    <p class="teksting">Маркетинг</p>
-                </li>
-                <li>
-                    <img src="./imeges/imeges/proekt9.jpg" alt="Ноутбук" width="370" height="294">
-
-                    <h2 class="portfolio-title" lang="en">Growing Business</h2>
-                    <p class="teksting">Приложение</p>
+                    <button class="group button-list-c" type="button">Маркетинг</button>
                 </li>
             </ul>
         </section>
+        <section class="portfolio">
+            <ul class="portfolio-projekt">
+                <li class="team-it">
+                    <div class="team-card">
+                        <img src="./imeges/imeges1/proekt1.jpg" alt="Екран ноутбука" width="370" height="294">
+                        <h2 class="portfolio-title">Технокряк</h2>
+                        <p class="teksting">Веб-сайт</p>
+                    </div>
+                </li>
+                <li class="team-it">
+                    <div class="team-card">
+                        <img src="./imeges/imeges1/proekt2.jpg" alt="Игра в мяч" width="370" height="294">
+                        <h2 class="portfolio-title" lang="en">Постер New Orlean vs Golden Star</h2>
+                        <p class="teksting">Дизайн</p>
+                    </div>
+                </li>
+                <li class="team-it">
+                    <div class="team-card">
+                        <img src="./imeges/imeges1/proekt3.jpg" alt="Реклама" width="370" height="294">
+                        <h2 class="portfolio-title" lang="en">Ресторан Seafood</h2>
+                        <p class="teksting">Приложение</p>
+                    </div>
+                </li>
+                <li class="team-it">
+                    <div class="team-card">
+                        <img src="./imeges/imeges1/proekt4.jpg" alt="Наушники" width="370" height="294">
+                        <h2 class="portfolio-title" lang="en">Проект Prime</h2>
+                        <p class="teksting">Маркетинг</p>
+                    </div>
+                </li>
+                <li class="team-it">
+                    <div class="team-card">
+                        <img src="./imeges/imeges1/proekt5.jpg" alt="Коробки" width="370" height="294">
+                        <h2 class="portfolio-title" lang="en">Проект Boxes</h2>
+                        <p class="teksting">Приложение</p>
+                    </div>
+                </li>
+                <li class="team-it">
+                    <div class="team-card">
+                        <img src="./imeges/imeges1/proekt6.jpg" alt="Монитор" width="370" height="294">
+                        <h2 class="portfolio-title" lang="en">Inspiration has no Borders</h2>
+                        <p class="teksting">Веб-сайт</p>
+                    </div>
+                </li>
+                <li class="team-it">
+                    <div class="team-card">
+                        <img src="./imeges/imeges1/proekt7.jpg" alt="Книга" width="370" height="294">
+                        <h2 class="portfolio-title" lang="en">Издание Limited Edition</h2>
+                        <p class="teksting">Дизайн</p>
+                    </div>
+                </li>
+                <li class="team-it">
+                    <div class="team-card">
+                        <img src="./imeges/imeges1/proekt8.jpg" alt="Бирка" width="370" height="294">
+                        <h2 class="portfolio-title" lang="en">Проект LAB</h2>
+                        <p class="teksting">Маркетинг</p>
+                    </div>
+                </li>
+                <li class="team-it">
+                    <div class="team-card">
+                        <img src="./imeges/imeges1/proekt9.jpg" alt="Ноутбук" width="370" height="294">
+                        <h2 class="portfolio-title" lang="en">Growing Business</h2>
+                        <p class="teksting">Приложение</p>
+                    </div>
+                </li>
+            </ul>
+        </section>
+            
+        
+        </div>
     </main>
     <!--Секция Footer-->
     <footer class="footer">
+        <div class="container">
         <a class="footer-logo" href="index.html"><span>Web</span>Studio</a>
         <address>
             <ul>
@@ -130,6 +144,7 @@
                 </li>
             </ul>
         </address>
+        </div>
     </footer>
 </body>
 

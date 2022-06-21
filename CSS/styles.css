@@ -1,3 +1,9 @@
+*,
+*::before,
+*::after {
+box-sizing: border-box;
+}
+
 :root {
     --black-text: #212121;
     --grey-text: #757575;
@@ -16,14 +22,38 @@ body {
     font-size: 14px;
     color: var(--grey-text);
     line-height: 1.14;
-    font-style: normal;
+    letter-spacing: 0.03em;
+
+}
+h1,
+h2,
+h3,
+h4,
+p{
+    margin-top: 0px;
+
+}
+ul{
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
 }
 
+.container{
+width: 1200px;
+padding-left: 15px;
+    padding-right: 15px;
 
-.header-link {
+margin-left: auto;
+margin-right: auto;
+outline: 1px solid red;
+}
 
-    color: var(--black-text);
-
+.header{
+display: flex;
+align-items: center;
+justify-content: space-evenly;
+margin-left: auto;
 }
 
 .header-link:hover,
@@ -32,7 +62,6 @@ body {
 }
 
 .logo {
-
     font-family: 'Raleway';
     font-style: normal;
     font-weight: 700;
@@ -41,12 +70,15 @@ body {
     letter-spacing: 0.03em;
     color: var(--black-text);
 }
+.header-link{
+    
+    align-items: center;
 
-span {
-    color: var(--blue);
+    color: var(--black-text);
 }
 
 .contact-link {
+    display: inline-block;
     font-family: Roboto;
     font-style: normal;
     font-weight: 500;
@@ -55,9 +87,15 @@ span {
     letter-spacing: 0.02em;
     text-align: left;
     /* info@devstudio.com */
-
     color: var(--grey-text);
+
 }
+
+span {
+    color: var(--blue);
+}
+
+
 
 .contact-link:hover,
 .contact-link:focus {
@@ -67,6 +105,7 @@ span {
 
 .portfolio-button:hover,
 .portfolio-button:focus {
+    color: var(--white);
     background-color: var(--bluedark);
 }
 
@@ -113,25 +152,49 @@ span {
 
 
 ul {
+    width: 1200px;
     list-style-type: none;
+    margin: 0px;
+    padding: 0px;
 }
 
+img{
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
 a {
     text-decoration: none;
+} 
+
+.group{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 38px;
 }
 
-.header {
 
+.header {
+    padding-top: 32px;
+    padding-bottom: 32px;
+    margin-bottom: 94px;
+    display: flex;
+    align-items: center;
     font-weight: 500;
 }
 
 .header-block {
+text-align: center;
+padding-top: 80px;
+padding-bottom: 94px;
+color: var(--white);
+background-color: var(--black-bg);
 
-    color: var(--white);
-    background-color: var(--black-bg);
 }
 
 .block {
+
     font-family: "Roboto";
     font-style: normal;
     text-align: center;
@@ -140,7 +203,10 @@ a {
     line-height: 1.36;
     text-transform: uppercase;
     letter-spacing: 0.06em;
+
 }
+
+
 
 .portfolio-list {
     font-family: "Roboto";
@@ -160,6 +226,7 @@ a {
     font-weight: 700;
     font-size: 18px;
     line-height: 2;
+    margin-top: 20px;
 
     letter-spacing: 0.06em;
     color: var(--black-text);
@@ -170,9 +237,26 @@ a {
     font-weight: 1.87;
 }
 
+.title-list{
+width: 270px;
+height: 101px;
+}
+
+.about-text{
+display: flex;
+flex-wrap: nowrap;
+align-content: stretch;
+margin-left: auto;
+padding-top: 94px;
+padding-bottom: 94px;
+justify-content: space-between
+
+}
+
 .title {
     font-family: "Roboto";
     font-weight: 500;
+    margin-top: 30px;
     text-align: center;
     font-size: 16px;
     line-height: 1.18;
@@ -181,20 +265,24 @@ a {
 }
 
 .title-title {
-    font-family: "Roboto";
     font-size: 16px;
     line-height: 1.18;
-    letter-spacing: 0.03em;
     text-align: center;
+    
 }
 
 .header-button {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    text-align: center;
     font-family: "Roboto";
     font-style: normal;
     font-weight: 700;
     font-size: 16px;
     line-height: 1.88;
-    display: flex;
+    
     border-radius: 4px;
     border: 0px;
     letter-spacing: 0.06em;
@@ -218,15 +306,41 @@ a {
     font-size: 16px;
     line-height: 1.6;
     color: var(--white);
+}
+
+
+
+.about-a{
+    outline: 1px solid var(--bluedark);
+    margin-right: 30px;
+}
+.about-a:last-child{
+    margin-right: 0px;
+}
+
+.about-a:nth-child(3n){
+    margin-bottom: 0px;
+}
+
+.about-a{
+    display: flex;
+    flex-wrap: wrap;
+justify-content: space-around;
+margin-right: 15px;
+margin-left: -15px;
 
 }
 
+
 .about {
+    text-align: center;
     font-family: "Roboto";
     font-style: normal;
     font-weight: 700;
     font-size: 36px;
+    line-height: 1.16;
     color: var(--black-text);
+
 }
 
 .about-title {
@@ -234,6 +348,7 @@ a {
     text-transform: uppercase;
     font-size: 14px;
     line-height: 1.7;
+    font-weight: 700;
 }
 
 .about-list {
@@ -243,14 +358,15 @@ a {
     line-height: 1.7;
 }
 
-.text,
-.group {
-    box-shadow: var(--grey-bg);
-    color: var(--black-text);
-    top: 180px;
+.text{
+    color: var(--white);
 }
-
-
+.group {
+    
+    box-shadow: var(--grey-bg);
+bottom: 34px;
+top: 174px;
+}
 .button-list {
     font-family: Roboto;
     font-style: normal;
@@ -308,36 +424,98 @@ a {
 .portfolio-button:hover,
 .portfolio-button:focus {
     background-color: var(--blue);
+    color: var(--white);
 }
 
 
 .header-button:hover,
 .header-button:focus {
     background-color: var(--bluedark);
+
 }
 
 .portfolio-projekt {
-
-    border-radius: [object Object]px;
+display: flex;
+flex-wrap: wrap;
+    
     border: 1px;
+}
+
+.portfolio-projekt:nth-child(-n+3) {
+    display: flex;
+    margin-left: 0px;
 
 }
 
-.comanda {
 
-    font-weight: 700;
-    line-height: 1.16;
-    letter-spacing: 0.03em;
+.team-card:last-child{
+    margin: left 0;
+    
+}
+.team-it {
+    display: flex;
+    width: 370px;
+    height: 404px;
+    margin-right: 30px;
+    margin-top: 30px;
+    flex-basis: calc((100% - 30px * 4)/4) ;
+}
+.team-it:nth-child(-n + 4){
+margin-bottom: 0px;
+}
+
+
+.team-itt{
+display: flex;
+width: 270px;
+height: 368px;
+flex-basis: calc((100% - 30px * 3)/3);
+}
+.card{
+    display: flex;
+margin-right: 15px;
+margin-left: -15px;
+}
+.comanda {
+    font-weight: normal; 
     text-align: left;
     filter: drop-shadow(0px 4px 4px rgba(0000.25));
     background-color: var(--grey-bg);
 }
+
+.team-cardi:nth-child(-n+4) {
+    margin-left: 0;
+}
+
+.team-card:nth-child(-n+3){
+    margin-left: 0;
+}
+.team-cardi{
+
+    display: block;
+    width: 270px;
+    height: 294px;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+.team-card{ 
+    
+    display: block;
+    width: 370px;
+    height: 404px;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
 
 .footer {
     background-color: var(--black-bg);
     font-family: "Roboto";
     font-style: normal;
     letter-spacing: 0.03em;
+    border-bottom: 94px;
+    max-width: 100%;
 }
 
 .footer-logo {
