@@ -6,8 +6,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GOIT-MARKUP-HW-03</title>
-    <!--Стили Портфолио-->
-    <link rel="stylesheet" href="./CSS/styles.css">
     <!--Шрифти-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,27 +16,28 @@
     <!--normalize styles end-->
     <!--Стили файла index.html-->
     <link rel="stylesheet" href="./CSS/styles.css">
+
 </head>
 
 <body>
     <header class="header">
-        
         <div class="container">
             <ul class="nav">
-            <nav class="nav">
-                <a class="logo" href="index.html"><span>Web</span>Studio</a>
-    
-                <a class="current header-link" href="index.html">Студия</a>
-                <a class="header-link" href="portfolio.html">Портфолио</a>
-                <a class="header-link" href="contakt">Контакты</a>
-            </nav>    
+                <nav class="nav">
+                    <a class="logo" href="index.html"><span>Web</span>Studio</a>
+                    <ul class="list-a">
+                        <li><a class="current header-link" href="index.html">Студия</a></li>
+                        <li><a class="header-link" href="portfolio.html">Портфолио</a></li>
+                        <li><a class="header-link" href="contakt">Контакты</a></li>
+                    </ul>
+                </nav>
                 <ul class="list">
                     <li class="ull"><a class="contact-link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
                     <li class="ull"><a class="contact-link" href="tel:+380961111111">+38 096 111 11 11</a></li>
                 </ul>
             </ul>
-        </div>
     
+        </div>
     </header>
     <main>
         <section class="section">
@@ -46,19 +45,19 @@
             <h1 class="portfolio-list" hidden>Портфолио</h1>
             <ul class="group">
                 <li>
-                    <button class="group portfolio-button text" type="button">Все</button>
+                    <button class="portfolio-button text" type="button">Все</button>
                 </li>
                 <li>
-                    <button class="group button-list" type="button">Веб-сайты</button>
+                    <button class="button-list" type="button">Веб-сайты</button>
                 </li>
                 <li>
-                    <button class="group button-list-a" type="button">Приложения</button>
+                    <button class="button-list-a" type="button">Приложения</button>
                 </li>
                 <li>
-                    <button class="group button-list-b" type="button">Дизайн</button>
+                    <button class="button-list-b" type="button">Дизайн</button>
                 </li>
                 <li>
-                    <button class="group button-list-c" type="button">Маркетинг</button>
+                    <button class="button-list-c" type="button">Маркетинг</button>
                 </li>
             </ul>
 
@@ -137,16 +136,14 @@
             <a class="footer-logo" href="index.html"><span>Web</span>Studio</a>
         
             <address class="foott">
-                <ul class="foot">
-                    <li><a class="footer-addres" href="https://goo.gl/maps/piqngm7oDQpEDh6u6" target="_blank"
+                <ul>
+                    <li class="addres"><a class="footer-addres foot" href="https://goo.gl/maps/piqngm7oDQpEDh6u6" target="_blank"
                             rel="noopener nofollow noreferrer">г. Киев, пр-т Леси Украинки, 26</a></li>
-                </ul>
-                <ul class="foot">
-                    <li>
-                        <a class="contakt-link" href="mailto:info@example.com">info@example.com</a>
+                    <li class="addres">
+                        <a class="contakt-link foot" href="mailto:info@example.com">info@example.com</a>
                     </li>
-                    <li>
-                        <a class="contakt-link" href="tel:+380991111111">+38 099 111 11 11</a>
+                    <li class="addres">
+                        <a class="contakt-link foot" href="tel:+380991111111">+38 099 111 11 11</a>
                     </li>
                 </ul>
             </address>

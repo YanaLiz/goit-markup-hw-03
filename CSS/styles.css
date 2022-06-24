@@ -31,7 +31,7 @@ h2,
 h3,
 h4,
 p{
-    margin-top: 0px;
+    margin: 0px;
 
 }
 ul{
@@ -75,17 +75,18 @@ margin-right: auto;
 .list{
     display: flex;
     align-items: center;
-    
+    margin-left: auto;
 }
 .nav{
 display: flex;
 align-items: center;
-justify-content: space-between;
 
+}
+.list-a{
+    display: flex;
 }
 .header{
 display: flex;
-
 border: 1px solid var(--grey);
 }
 
@@ -119,12 +120,12 @@ margin-right: 50px;
     line-height: 1.2;
     letter-spacing: 0.03em;
     color: var(--black-text);
-    padding-bottom: 25px;
+    
     margin-right: 93px;
 }
 .header-link{
     align-items: center;
-    margin-right: 50px;
+    padding-right: 50px;
     color: var(--black-text);
 }
 .header-link:last-child {
@@ -198,14 +199,6 @@ margin-right: 50px;
 
 }
 
-.group{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 38px;
-}
-
-
 .header {
     padding-top: 32px;
     padding-bottom: 32px;
@@ -213,7 +206,6 @@ margin-right: 50px;
     display: flex;
     align-items: center;
     font-weight: 500;
-
 
 }
 
@@ -265,10 +257,8 @@ background-color: var(--black-bg);
     font-weight: 700;
     font-size: 18px;
     line-height: 2;
-    margin-top: 20px;
-    margin-bottom: 9px;
-
-    margin-left: 24px;
+    
+    margin-bottom: 4px;
     letter-spacing: 0.06em;
     color: var(--black-text);
 }
@@ -276,8 +266,7 @@ background-color: var(--black-bg);
 .teksting {
     font-size: 16px;
     font-weight: 1.87;
-    margin-bottom: 20px;
-    margin-left: 24px;
+    
 }
 
 .title-list{
@@ -301,10 +290,8 @@ justify-content: space-evenly;
 .title {
     font-family: "Roboto";
     font-weight: 500;
-    margin-top: 30px;
-
     text-align: center;
-    
+    margin-bottom: 10px;
     font-size: 16px;
     line-height: 1.18;
     letter-spacing: 0.03em;
@@ -347,7 +334,7 @@ justify-content: space-evenly;
     width: 73px;
     height: 38px;
     left: 495px;
-    top: 174px;
+    margin-right: 8px;
     background-color: var(--blue);
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
     border-radius: 4px;
@@ -365,7 +352,7 @@ justify-content: space-evenly;
     
     display: flex;
     justify-content: space-between;
-    padding-bottom: 94px;
+    
 }
 .about-a:nth-child(-n+3) {
     
@@ -390,6 +377,7 @@ margin-bottom: 50px;
     font-size: 14px;
     line-height: 1.7;
     font-weight: 700;
+    margin-bottom: 10px;
 }
 
 .about-list {
@@ -397,22 +385,21 @@ margin-bottom: 50px;
     font-style: normal;
     font-weight: 400;
     line-height: 1.7;
+    margin: 0px;
 }
-
 .group{
     display: flex;
-margin-right: 8px;
+    justify-content: center;
+    align-items: center;
+    margin-right: 8px;
 margin-bottom: 34px;
+
 }
+
 .text{
     color: var(--white);
 }
-.group {
-    
-    box-shadow: var(--grey-bg);
-bottom: 34px;
-top: 174px;
-}
+
 .button-list {
     font-family: Roboto;
     font-style: normal;
@@ -421,8 +408,9 @@ top: 174px;
     line-height: 1.6;
     letter-spacing: 0.03em;
     border: 0px;
+    padding: 6px 22px;
+margin-right: 8px;
 }
-
 
 .button-list-a {
 
@@ -433,6 +421,8 @@ top: 174px;
     font-size: 16px;
     line-height: 1.6;
     border: 0px;
+    padding: 6px 22px;
+    margin-right: 8px;
     background: var(--grey-bg);
 }
 
@@ -448,6 +438,8 @@ top: 174px;
     line-height: 1.6;
     letter-spacing: 0.03em;
     color: var(--black-text);
+    padding: 6px 22px;
+    margin-right: 8px;
 }
 
 .button-list-c {
@@ -456,6 +448,8 @@ top: 174px;
     background: var(--grey-bg);
     border-radius: 4px;
     border: 0px;
+    padding: 6px 22px;
+    margin-right: 8px;
     font-family: "Roboto";
     font-style: normal;
     font-weight: 500;
@@ -482,20 +476,22 @@ top: 174px;
 .portfolio-projekt {
 display: flex;
 flex-wrap: wrap;
-
+flex-basis: calc((100% - 90px) / 3);
+outline: 1px solid crimson;
+margin-right: 30px;
 }
 
 .portfolio-projekt:nth-child(3n) {
-    display: flex;
+    margin-right: 0;
 
 }
-
+.portfolio-projekt:nth-child(- n + 3){
+    margin-bottom: 0;
+}
 
 .filter{
     margin-bottom: 20px;
 }
-
-
 
 .team-itt{
 
@@ -507,9 +503,7 @@ background-color: var(--white);
 box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 border-radius: 0px 0px 4px 4px;
 
-border: 1px solid var(--crem);
 }
-
 
 .team-itt:last-child{
     margin-right: 0px;
@@ -518,24 +512,15 @@ border: 1px solid var(--crem);
 .card{
     display: flex;
     justify-content: center;
-
-
 }
 .card:nth-child(-n+4) {
     
     margin-right: 0px
 }
-.comanda {
-    font-weight: normal; 
-    text-align: center;
-    filter: drop-shadow(0px 4px 4px rgba(0000.25));
-    background-color: var(--grey-bg);
-    padding-bottom: 94px;
-    padding-top: 0px;
-    font-weight: 700;
-
+.section.comanda{
     background-color: var(--grey-bg);
 }
+
 .about{
     text-align: center;
     
@@ -546,48 +531,35 @@ border: 1px solid var(--crem);
 }
 
 .team-cardi{
-    
-    margin-left: 0px;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        border: 1px solid var(--crem-grey);
 
     border-radius: 0px 0px 4px 4px;
     background-color: var(--white);
 }
 .team-it {
-border: 1px solid var(--crem);
 
-    margin-right: 30px;
-    margin-top: 30px;
+    margin: 15px;
     flex-basis: calc((100% - 30px * 3)/3);
 } 
 
-.team-it:nth-child(3n){
-    margin-right: 0;
-}
 .team-card{ 
+    padding-top: 20px;  
+    padding-left: 24px;
+    padding-bottom: 24px;
     
-    padding-top: 20px; 
-    padding-right: 24px; 
-    padding-bottom: 20px; 
-    padding-left: px; ;
-    border-left:  px;
-    border-right: px;
-    border-bottom: 4px;
-
-
+    border: 1px solid var(--crem-grey);
 }
 
 .foott{
 
-padding-top: 20px;
-padding-bottom: 9px;
-margin-bottom: 9px;
+margin-top: 20px;
 }
 
-
-
 .contakt-link{
-padding-bottom: 9px;
-padding-top: 9px; 
+margin-bottom: 9px;
+margin-top: 9px; 
 
 }
 
@@ -599,6 +571,10 @@ padding-top: 9px;
     
 }
 
+.addres{
+    margin-top: 9px;
+    margin-bottom: 9px;
+}
 .footer-logo {
     color: var(--white);
     font-family: 'Raleway';
@@ -616,7 +592,7 @@ padding-top: 9px;
     font-size: 14px;
     line-height: 1.7;
     color: var(--white);
-    padding-bottom: 9px;
+    margin-bottom: 9px;
 }
 
 
